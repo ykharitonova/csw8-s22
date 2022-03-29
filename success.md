@@ -46,7 +46,7 @@ All due times in our class are at **10PM Pacific time (22:00)**. Add the days/ti
 |     |     | **Async activity**: Work on/finish related CAs and LAs _before_ the lab on Wed. |
 | Wed | 10PM: LAs | **Guided tutoring lab sessions**: in small groups, students work on the LA (starting and/or finishing), resolving any lingering questions, reviewing materials with mentors. Students have until _next week_ to finish/submit the LA. |
 |     |     | **Async activity**: Work on/finish related CA and LA in zybooks |
-| Thu |     | **Class 2**: Synchronous activities. Join the class via Zoom and ask questions or ask for clarifications and additional examples and/or review the quiz questions. Be prepared to work with your classmates. |
+| Thu | 10PM: LA Checkpt    | **Class 2**: Synchronous activities. Join the class via Zoom and ask questions or ask for clarifications and additional examples and/or review the quiz questions. Be prepared to work with your classmates. |
 |     |     | **Async activity**: Review concepts, work on/finish related CA and LA |
 | Sat |     | **Async activity**: Finish the Weekly reflection - review the past week, reflect on your learning, provide feedback, note any lingering questions. |
 | Sun | 10PM: Reflection | **Async activity**: Read the book, review concepts, and work on/finish PA, CA, and LA |
