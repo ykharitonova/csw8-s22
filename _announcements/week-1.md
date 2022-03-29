@@ -22,12 +22,4 @@ Hello world! 🖖
 - Start reading Chapters 1 and 2 on zyBooks
 - Attend the synchronous class
 - You will be added to the course forum (Piazza) and the Gradescope site on **Tuesday evening**, after the first lecture, once we close the waitlist. In the meantime, you can use the form that's linked on the Syllabus page to submit any questions that you have.
-<!--
-- Attend the synchronous lab on Zoom
-- create an account on Piazza using your **@umail.ucsb.edu** email address (NOT @ucsb.edu)
-- read the Posting Guidelines note on Piazza
-- respond to the post on Piazza with your information and your team name
-- submit Week 1 reflection (linked under the Week 1 tab on Gauchospace)
-- double-check that the above items have all been completed
--->
 

@@ -37,6 +37,7 @@ Getting started with Just the Class is simple.
     - `success.md` - make sure to change the **Roadmap** to align with your course calendar
 
 * For the `ref/` folder, I recommend initially comitting the `goals.md`, since it's referenced in the Syllabus and `keyboard.md`; the rest of them can be added later, when they become relevant.
+* Initial commit included the following files: `README.md _announcements _config.yml _includes/ _layouts/ _modules/ _sass/ about.md announcements.md assets/ calendar.md faq.md index.md jekyll.sh ref/goals.md ref/keyboard.md schedule.md staff.md success.md`
 
 
 Just the Class has been used by instructors at Stanford University ([CS 161](https://stanford-cs161.github.io/winter2021/)), UC Berkeley ([Data 100](https://ds100.org/fa21/)), UC Santa Barbara ([DS1](https://ucsb-ds.github.io/ds1-f20/)), Northeastern University ([CS4530/5500](https://neu-se.github.io/CS4530-CS5500-Spring-2021/)), and Carnegie Mellon University ([17-450/17-950](https://cmu-crafting-software.github.io/)). For a few open-source examples, see the following course websites and their source code.
