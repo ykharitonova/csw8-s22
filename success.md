@@ -62,6 +62,22 @@ All due times in our class are at **10PM Pacific time (22:00)**. Add the days/ti
 
 ---
 
+## Create an email filter
+
+We recommend that you set up a filter for the messages that relate to this course.
+
+Let's assume that you are using your UCSB email in the browser.
+* In the search-box, paste the following: `"CMPSCW 8" OR "CSW 8"`
+* note that the capitals for the `OR` operator are important
+* then, at the end of the search-box, click on the sliders' icon (to the right of the X), which will bring up a dropdown 
+* click on _"create filter"_
+    * select _Star It_
+    * apply a new label `_CSW8` (the underscore will keep it on top of all other labels)
+    * select _Always mark it as important_
+    * select _Categorize it as **Primary**_
+* now you have a quick way to access the announcements that we send from the Gauchospace forum as well as any direct notes you/we send via email (hence why we ask that you always add "CSW 8" to the subject!)
+
+---
 
 
 # General Guidelines on How to Succeed in a Computing Course
