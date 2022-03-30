@@ -1,5 +1,7 @@
 ---
 timeline:
+  - '8:00 AM'
+  - '8:30 AM'
   - '9:00 AM'
   - '9:30 AM'
   - '10:00 AM'
@@ -27,7 +29,7 @@ timeline:
   - '9:00 PM'
 schedule:
   - name: Monday
-   events:
+    events:
       - name: Office Hours
         start: 1:00 PM
         end: 3:00 PM
@@ -46,7 +48,7 @@ schedule:
         start: 9:30 AM
         end: 10:45 AM
         location: Zoom
-        name: Office Hours
+      - name: Office Hours
         start: 11:00 AM
         end: 1:00 PM
         location: Justin
