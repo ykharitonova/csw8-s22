@@ -11,6 +11,7 @@ Mar 29
 Mar 30
 : **LA**{: .label .label-green } First lab sessions 🎊
 : **➡️**{: .label .label-yellow } Post team info on Piazza
+   : **10PM** ⏰  Due: **LA01 Checkpoint**{: .label .label-green }
 
 Mar 31
 : 09:30am **Class**{: .label .label-purple }

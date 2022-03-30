@@ -6,11 +6,11 @@ Apr 4
 : _Finish reading and review Chapter 02 in zyBooks._
 : _Complete the PAs and CAs._
 : _Test your understanding with the Reading Quiz._
-   : **10PM** ⏰  Due: **PA02**{: .label .label-orange }
+   : **10PM** ⏰  Due: **PA01**{: .label .label-orange }**PA02**{: .label .label-orange }
 
 Apr 5
 : 09:30am **Class**{: .label .label-purple }
-   : **10PM** ⏰  Due: **CA02**{: .label .label-blue }
+   : **10PM** ⏰  Due: **CA01**{: .label .label-blue }**CA02**{: .label .label-blue }
 
 Apr 6
 : 09:00am **LA01**{: .label .label-green }_are expected to be done_
@@ -18,7 +18,7 @@ Apr 6
 
 Apr 7
 : 09:30am **Class**{: .label .label-purple }
-   : **10PM** ⏰  Due: **LA Checkpoint**{: .label .label-green }
+   : **10PM** ⏰  Due: **LA02 Checkpoint**{: .label .label-green }
 
 Apr 8
 : _Begin reading next week’s chapter._
