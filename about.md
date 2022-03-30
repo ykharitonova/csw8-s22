@@ -33,7 +33,7 @@ See [Gauchospace](https://gauchospace.ucsb.edu) for more information (Try the Zo
 
 You'll attend class and lab/discussion online via Zoom during the specified times, just like a physical class. Class time and labs **require synchronous interactions and active participation**.
 
-Reminder: If you are **not** supposed to be registered for another UCSB course that overlaps with this one. If you have a course conflict, you **must have** specific written permission from **both** instructors to stay enrolled in both courses. We will _not_ make any accommodations for you.
+Reminder: You are **not** supposed to be registered for another UCSB course that overlaps with this one. If you have a course conflict, you **must have** specific written permission from **both** instructors to stay enrolled in both courses. We will _not_ make any accommodations for you.
 
 **Required**: Computer/tablet access (_**not** smartphone_) with headphones, fast Internet, non-distracting area (not a coffee shop). You'll watch/listen to live video/audio, interact with classmates, and type to chat or code.  
 
