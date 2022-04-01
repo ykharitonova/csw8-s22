@@ -61,7 +61,7 @@ By the end of Sunday, _ideally_, you should be finished with PAs for Week 1 and 
 * Work on completing Week 1 lab activities (LA01) _before Wednesday 9am_ - ask for clarifications during the [office hours]({{site.url}}/{{site.baseurl}}/schedule/), lab sessions, or post your questions on [Piazza]({{site.aux_links.Piazza}}) (you can watch the class recording to see how to make a new post/post a follow-up)
 * Take a practice quiz on Gauchospace to test your understanding
 
-Welcome to the course! We look forward to working with you!
+Welcome to the course! We look forward to a great quarter and to working with you!
 
 Prof. K and the mentors
 

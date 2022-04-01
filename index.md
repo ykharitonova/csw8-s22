@@ -25,6 +25,6 @@ This site is provided just as a convenience for quick access and searching: Gauc
 
 {% if site.announcements %}
 {{ site.announcements.last }}
-[Announcements](announcements.md){: .btn .btn-outline .fs-3 }
+[Previous Announcements](announcements.md){: .btn .btn-outline .fs-3 }
 {% endif %}
 
