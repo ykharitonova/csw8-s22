@@ -24,4 +24,5 @@ Apr 2
 
 Apr 3
 : **➡️**{: .label .label-yellow } Submit **Welcome survey** on Gauchospace
+   : **10PM** ⏰  Due: **Welcome survey**{: .label .label-yellow }
 

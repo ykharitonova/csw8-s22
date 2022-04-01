@@ -20,7 +20,7 @@ Hello world! 🖖
 
 <span style="color:green">_Next steps_</span>
 - Fill out the **Welcome Survey** linked on Gauchospace.
-- Start reading Chapters 1 and 2 on zyBooks
+- Start reading Week 1 and Week 2 chapters on zyBooks
 - Attend the synchronous class
 - You will be added to the course forum (Piazza) and the Gradescope site on **Tuesday evening**, after the first lecture, once we close the waitlist. In the meantime, you can use the form that's linked on the Syllabus page to submit any questions that you have.
 
