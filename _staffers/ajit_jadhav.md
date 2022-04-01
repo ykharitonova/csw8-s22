@@ -1,7 +1,7 @@
 ---
 name: Ajit Jadhav
 pronouns: Him/his
-role: Undergraduate Learning Assistant
+role: Teaching Assistant
 ula_for: CS 08
 photo: CS08-S22-Ajit-Jadhav.jpg
 ---
