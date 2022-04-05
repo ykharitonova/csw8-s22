@@ -30,7 +30,7 @@ All due times in our class are at **10PM Pacific time (22:00)**.
 
 | Week | **PA**{: .label .label-orange} (Mon) | **CA**{: .label .label-blue} (Tue) | **LA**{: .label .label-green} (Wed) | **LA Chkpt**{: .label .label-green} | **📝**{: .label .label-yellow} (Sun) | 
 |--- |--- |--- |--- |--- | 
-| [Week 1](#week-1) | - | - | - | - | Apr 3<sup>\*</sup> |
+| [Week 1](#week-1) | Apr 4 | Apr 5 | Apr 6 | Apr 7 | Apr 3<sup>\*</sup> |
 | [Week 2](#week-2) | Apr 4 | Apr 5 | Apr 6 | Apr 7 | Apr 10 |
 | [Week 3](#week-3) | Apr 11 | Apr 12 | Apr 13 | Apr 14 | Apr 17 |
 | [Week 4](#week-4) | Apr 18 | Apr 19 | Apr 20 | Apr 21 | Apr 24 |
