@@ -63,7 +63,7 @@ schedule:
       - name: Office Hours
         start: 5:00 PM
         end: 7:00 PM
-        location: Saikumar
+        location: Nikunj
   - name: Wednesday
     events:
       - name: Section
@@ -101,7 +101,7 @@ schedule:
       - name: Office Hours
         start: 5:00 PM
         end: 7:00 PM
-        location: Nikunj
+        location: Saikumar
   - name: Thursday
     events:
       - name: Lecture
