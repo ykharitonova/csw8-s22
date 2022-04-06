@@ -81,11 +81,11 @@ schedule:
       - name: Section
         start: 12:00 PM
         end: 12:50 PM
-        location: Deept, Nicholas
+        location: Liu, Nicholas
       - name: Section
         start: 1:00 PM
         end: 1:50 PM
-        location: Liu, Sara, Nicholas
+        location: Deept, Sara, Nicholas
       - name: Section
         start: 2:00 PM
         end: 2:50 PM
