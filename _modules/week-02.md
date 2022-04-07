@@ -18,7 +18,7 @@ Apr 6
 
 Apr 7
 : 09:30am **Class**{: .label .label-purple }
-   : **10PM** ⏰  Due: **LA02 Checkpoint**{: .label .label-green }
+   : **10PM** ⏰  Due: **LA02 Checkpoint**{: .label .label-green },see the ["Deadlines extended" note](https://ucsb-csw8.github.io/s22/announcements/)
 
 Apr 8
 : _Begin reading next week’s chapter._
