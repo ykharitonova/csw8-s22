@@ -69,7 +69,7 @@ schedule:
       - name: Section
         start: 09:00 AM
         end: 09:50 AM
-        location: Liu
+        location: Xinyu
       - name: Section
         start: 10:00 AM
         end: 10:50 AM
