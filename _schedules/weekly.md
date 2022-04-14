@@ -109,6 +109,10 @@ schedule:
         end: 10:45 AM
         location: Zoom
       - name: Office Hours
+        start: 11:00 AM
+        end: 12:00 PM
+        location: Prof K
+      - name: Office Hours
         start: 2:00 PM
         end: 4:00 PM
         location: Liu
