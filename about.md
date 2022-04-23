@@ -48,7 +48,7 @@ Reminder: You are **not** supposed to be registered for another UCSB course that
 ---
 
 _Make sure that you read this page carefully and are aware of the course policies **for this term**. 
-Do not automatically assume that the course is the same as the one that you might have taken before._
+Do not automatically assume that the course is the same as the one that you or your friends might have taken before._
 
 ---
 
@@ -59,6 +59,8 @@ Do not automatically assume that the course is the same as the one that you migh
 > Make sure to use your <span style="color:red">**7-digit student ID _without_ any dashes or spaces** (ONLY digits)</span>. (⚠️  <span style="color:orange">_You might fail the course if this ID is incorrectly entered._</span>)
 
 _zyBook will allow you to update your ID if you accidentally enter it incorrectly._
+
+Your ID must match the one you see on Gauchospace.
 
 ### Communication
 **Do _not_ message us individually**. 
@@ -80,20 +82,26 @@ The link to the form to request an extension and to submit anonymous feedback ar
 
 You will also submit your work through Google Forms or Qualtrics links - they will be shared during the class, posted via Gauchospace, or linked in the respective assignment.
 
+For in-class participation, we will be using the [iClicker app](https://macmillan.force.com/iclicker/s/article/Remote-Instruction-iClicker-Cloud-Student-Onboarding-Resources), which is linked on Gauchospace - use that link to create an account or log in and you will automatically be added to the course.
+
 ### Grading
-    10% Course Participation: synchronous participation + weekly reflection; 
-       2 lowest/missing of each will be dropped
     5% Participation Activities (PAs): in zyBook
     15% Challenge Activities (CAs): in zyBook
     25% Lab Activities (LAs): in zyBook
     20% Quizzes: 3-6 quizzes, lowest will be dropped
     25% Final Project submitted via Gradescope
+    2% Weekly reflection; 
+       2 lowest/missing will be dropped
+    8% Course Participation: in-class activities + iClicker 
+       4 lowest/missing will be dropped
 
 > Note: **There will be no midterms or final exams.** 
 
-Quizzes will usually be announced during the previous week.
+Quizzes will usually be announced during the previous week/class. 
+
+**iClicker participation** gets full credit if a student responds to 75% of questions asked during the class, rounded up (e.g., if there are 14 questions asked during the class you need to _answer_ 11 of them to get the participation point). Note that you do not need to get them all correct but there might occasionally be extra points for those who get all or almost all correctly answered.
                                          
-Final course grade: 90/80/70/60 scale, with +/- grades (i.e., it is possible to get B-, B, B+, etc.). 
+Final course grade will use the 90/80/70/60 scale, with +/- grades (i.e., it is possible to get B-, B, B+, etc.). 
 
 Note that A+ is given at the discretion of the instructor for outstanding performance and participation that go beyond the regular class expectations.
 
@@ -117,9 +125,9 @@ This class _has to be taken for a letter grade_. The College of Engineering does
 Deadlines for all activities are available on Gauchospace (and are listed on the [Calendar]({{site.url}}/{{site.baseurl}}/calendar)). 
 
 <span style="color:green">These are hard deadlines beyond which we **will not accept late submissions**.</span>
-During the quarter, you can request an extension for the zyBook activities (we can offer extension only for the zyBooks activities) - see more information [below](#request-for-accommodations).
+During the quarter, you can request an extension for the zyBook activities (we can offer extensions only for the zyBooks activities) - see more information [below](#request-for-accommodations).
 
-It is the responsibility of each student to make sure their activity grades on zybooks are completed as expected and the correct score is displayed on Gauchospace. A portion of the LA score may be based on hidden tests and our manual inspection of code. Some of the labs might need to be submitted on Gradescope.
+It is the responsibility of each student to make sure their activity grades on zybooks are completed as expected and the correct score is displayed on Gauchospace. A portion of the LA score may be based on hidden tests and our manual inspection of code. Some of the labs might need to be submitted on Gradescope - the lab will specify it in the instructions.
 
 ---
 
@@ -127,14 +135,15 @@ It is the responsibility of each student to make sure their activity grades on z
 Any such requests need to be arranged with the DSP (see their contact information [below](#disabled-students-program-dsp)). 
 
 ### Athletic / University-approved Accommodations
-As soon as possible, submit your documented accommodation and attach the documentation (e.g., a signed letter from the coach with the tournament dates) via 
+As soon as possible, submit your documented accommodation and attach the documentation (e.g., a signed letter from the coach with the tournament dates _with your name on it_) via 
 the request for an extension form
 linked [below](#request-for-accommodations).
 You will be required to submit this form separately for all weeks in which you will need the accommodation.
 
 ### Deadline extension for zyBook activities
-During the term, you can request **two 1-day extensions** for the weekly deadline of the **zyBook activities** (we can offer extension only for the zyBooks activities, not the quizzes, reflections, etc.). No need to contact us via the forum or the email, just [submit this form to request an extension](https://forms.gle/QQkXMfKswjDbCEi49) and select whether the extension is for the PAs, CAs, and/or LAs.
-You need to submit this form **within a day of the respective 10pm** deadline.
+During the term, you can request **two 1-day extensions** for the weekly deadline of the **zyBook activities** (we can offer extension only for the zyBooks activities, not the quizzes, reflections, etc.). Do not contact us via the forum or the email, just [submit this form to request an extension](https://forms.gle/QQkXMfKswjDbCEi49) and select whether the extension is for the PAs, CAs, and/or LAs.
+* You need to submit this form **within a day of the respective 10pm** deadline.
+* We will not accept retroactive extension requests for previous weeks.
 
 If your situation is more serious and requires a longer extension, you need to provide the **official documentation** and complete the steps described in the section below. 
 
@@ -142,8 +151,8 @@ If your situation is more serious and requires a longer extension, you need to p
 ### Personal / Technology / Health / Living Situation Issues
 If there are issues which are affecting your ability to meet course deadlines, please submit the request for an extension form as soon as you find out about the issue. Otherwise, _we do not accept late work or provide individual make-up assignments_.
 
-An extension due to an emergency must be based on an **official documentation** that shows your name, the reason/issue description, and dates (e.g., even the processed tickets to fly home for an emergency can count as documentation).
-You can black out any sensitive information and send it through [the request for an extension form](https://forms.gle/QQkXMfKswjDbCEi49) **as soon as possible**. Please, do not contact us asking for a longer extension without providing the **official documentation**. 
+An extension due to an emergency must be based on an **official documentation** that shows 1) your _name_, 2) the _reason/issue_ description, and 3) _dates_ (e.g., even the processed tickets to fly home for an emergency can count as documentation as long as your name and dates are on them).
+You can black out any sensitive information and send it through [the request for an extension form](https://forms.gle/QQkXMfKswjDbCEi49) **as soon as possible**. Please, do not contact us asking for a longer extension without providing the **official documentation** that lists the 3 required pieces of information. 
 
 ---
 
