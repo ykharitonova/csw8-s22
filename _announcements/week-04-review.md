@@ -67,7 +67,7 @@ The iClicker accuracy of your responses (performance) is not going to be include
 ## Your TO-DO before Week 5
 
 * _Please download and install [Python](https://www.python.org/) before next week._
-* Read about [Python installation and working with IDLE]({{site.url}}/{{site.baseurl}}/ide)
+* Read about [Python installation and working with IDLE]({{site.url}}/{{site.baseurl}}/ref/ide)
 * Create a file called **`week5_laps.py`** using the sample [lab instructions]({{site.url}}/{{site.baseurl}}/ref/labtocode/#sample-lab-instructions)
 * Create an account on [Gradescope](https://www.gradescope.com/) _using the link provided on Gauchospace_ (underneath the iClicker link)
 * Submit your **`week5_laps.py`** file on Gradescope. You can submit an unlimited number of times until the due date. 
