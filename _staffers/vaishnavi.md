@@ -2,7 +2,7 @@
 name: Vaishnavi Himakunthala
 pronouns: She/her
 role: Undergraduate Learning Assistant
-photo: 
+photo: CS-08-S22-Vaishnavi-Himakunthala (1).jpg
 ---
 
 Hi everyone! My name is Vaishnavi, and I'm a first year CS major. This is my first time being an ULA, so I'm kind of nervous, but super excited to get to know you all! 
