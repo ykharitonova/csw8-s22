@@ -1,8 +1,10 @@
 ---
-title: Week 5 Review (Functions)
+title: Week 5 Review 
 week: 5
 date: 2022-04-29
 ---
+
+# 🌟 Week 5: Writing reusable, generalizable code (Functions)
 
 Dear all,
 

@@ -4,6 +4,8 @@ week: 0
 date: 2022-04-01
 ---
 
+# 🐣 Week 1: Intro to Python 3
+
 <span style="color:green">_End of the week review_</span>
 
 Happy Aloha Friday! 🌺

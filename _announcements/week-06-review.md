@@ -1,8 +1,10 @@
 ---
-title: Week 6 Review (Loops)
+title: Week 6 Review 
 week: 6
 date: 2022-05-06
 ---
+
+# 🎲 Week 6: Repeating and Iterating (Loops)
 
 Dear all,
 

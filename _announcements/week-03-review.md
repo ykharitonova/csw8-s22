@@ -1,8 +1,10 @@
 ---
-title: Week 3 Review (Variables and Types)
+title: Week 3 Review 
 week: 3
 date: 2022-04-15
 ---
+
+# 📚 Week 3: Representing data (Variables and Types) 
 
 Dear all,
 

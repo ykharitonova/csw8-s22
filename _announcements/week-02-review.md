@@ -1,8 +1,10 @@
 ---
-title: Week 2 Review (Objects, Functions, and Expressions)
+title: Week 2 Review 
 week: 2
 date: 2022-04-08
 ---
+
+# 🎭 Week 2: Objects, Functions, and Expressions
 
 Dear all,
 
