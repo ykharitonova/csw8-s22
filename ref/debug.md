@@ -19,7 +19,9 @@ Artwork by `@allison_horst`
 1. Read the error message and look at the line that it refers to.
     1. Sometimes the issue is at the line just **above** the line that was listed in the error.
     1. If enabled, pay close attention to the **syntax highlighting** in your editor, which can point at where the error might be happening.
-1. Use `print()` statements to check the type and value of your variable.
+1. Use `print()` statements to display the type and value of your variable.
+1. Go back to the instructions and carefully re-read them.
+1. Use [Python Tutor to visualize your code](https://pythontutor.com/visualize.html#mode=edit).
 1. Use the [Rubber Duck Debugging](https://rubberduckdebugging.com) to walk yourself through the logic of your code.
 
 ---
