@@ -130,9 +130,5 @@ schedule:
         start: 10:00 AM
         end: 12:00 PM
         location: Apurv
-      - name: Office Hours
-        start: 2:00 PM
-        end:  3:00 PM
-        location: Liu
   
 ---
