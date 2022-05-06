@@ -138,6 +138,75 @@ dict1 = {"A":1, "B":2, "C":3}
 print(dict1["A"])
 ```
 
+---
+
+### Output printing None
+
+* None is printed even though you don't want it to be there 
+* Example erroneous code: 
+```py
+def print_hello():
+  print("hello")
+if __name__ == '__main__':
+  print(print_hello())
+```
+
+* **Cause**: The function print_hello() does not return anything (it has no return statement) so when you call print(print_hello()) you are printing the return value which is None. 
+
+* Correct code: 
+```py
+def print_hello():
+  print("hello")
+if __name__ == '__main__':
+  print_hello()
+```
+
+---
+
+### Positional Arguments Error
+
+* Let's first look at the case where too many arguments were provided in the function call
+* print_name takes 0 positional arguments but 1 was given
+* Example erroneous code: 
+```py
+def print_name():
+  print("Sam")
+if __name__ == '__main__':
+  print_name("Sam")
+```
+* **Cause**: The function print_name() does not take any parameters but when calling the function one parameter is being passed. This error signifies that there is a mismatch between the number of parameteres the function defintion and then number of arguments in the function call. 
+
+* Correct code: 
+```py
+def print_name():
+  print("Sam")
+if __name__ == '__main__':
+  print_name()
+```
+* This also works the other way around if you are missing arguments in the function call
+* get_largest() missing 1 required positional argument: 'y'
+* Example erroneous code: 
+```py
+def get_largest(x,y):
+    return max(x,y)
+if __name__ == '__main__':
+  x = int(input())
+  y = int(input())
+  print(get_largest(x))
+```
+* **Cause**: The function get_largest takes in two parameters but when calling the function one is passed in. This error likewise signifies that there is a mismatch between the number of parameteres the function defintion and then number of arguments in the function call. 
+
+* Correct code: 
+```py
+def get_largest(x,y):
+    return max(x,y)
+if __name__ == '__main__':
+  x = int(input())
+  y = int(input())
+  print(get_largest(x,y))
+  
+```
+
 
 ---
 
