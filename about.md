@@ -88,6 +88,8 @@ For in-class participation, we will be using the [iClicker app](https://macmilla
     5% Participation Activities (PAs): in zyBook
     15% Challenge Activities (CAs): in zyBook
     25% Lab Activities (LAs): in zyBook
+        5% Checkpoint Lab Activities, lowest 2 dropped
+        20% All Lab Activities (LAs)
     20% Quizzes: 3-6 quizzes, lowest will be dropped
     25% Final Project submitted via Gradescope
     2% Weekly reflection; 
