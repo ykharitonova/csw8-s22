@@ -174,7 +174,7 @@ def print_name():
 if __name__ == '__main__':
   print_name("Sam")
 ```
-* **Cause**: The function print_name() does not take any parameters but when calling the function one parameter is being passed. This error signifies that there is a mismatch between the number of parameteres the function defintion and then number of arguments in the function call. 
+* **Cause**: The function print_name() does not take any parameters but when calling the function one parameter is being passed. This error signifies that there is a mismatch between the number of parameteres in the function defintion and the number of arguments in the function call. 
 
 * Correct code: 
 ```py
@@ -194,7 +194,7 @@ if __name__ == '__main__':
   y = int(input())
   print(get_largest(x))
 ```
-* **Cause**: The function get_largest takes in two parameters but when calling the function one is passed in. This error likewise signifies that there is a mismatch between the number of parameteres the function defintion and then number of arguments in the function call. 
+* **Cause**: The function get_largest takes in two parameters but when calling the function one is passed in. This error likewise signifies that there is a mismatch between the number of parameteres in the function defintion and the number of arguments in the function call. 
 
 * Correct code: 
 ```py
