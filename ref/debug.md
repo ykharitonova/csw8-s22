@@ -36,13 +36,25 @@ Artwork by `@allison_horst`
 
 ## `EOFError: EOF when reading a line`
 
-* **Cause**: Python is expecting an input but there is no input to provide. Alternatively, there might be a missing closing parenthesis (see [`SyntaxError: unexpected EOF while parsing`](#syntaxerror-unexpected-eof-while-parsing)). 
+* **Cause**: 
+    * Python is expecting an input but there is no input to provide. 
+    * Alternatively, there might be a missing closing parenthesis (see [`SyntaxError: unexpected EOF while parsing`](#syntaxerror-unexpected-eof-while-parsing)). 
+    * If the error is produced when using a loop, check that you do not have an infinite loop.
 * The program instructions might be providing 1 input value, but you have an extra `input()` in your code.
 ```py
 num_items = int(input())
 item = input()
 ```
 but the input is just a single number, there's no `item` to provide via `input()`.
+
+* An infinite loop example - `num_items` doesn't get updated _within the loop_, so the condition stays always `True` (unless `num_items == 0` and the loop is not executed):
+```py
+num_items = int(input())
+items = []
+while num_items:
+    item = input("Enter an item: ")
+    items.append(item)
+```
 
 
 ---
