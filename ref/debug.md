@@ -138,18 +138,172 @@ dict1 = {"A":1, "B":2, "C":3}
 print(dict1["A"])
 ```
 
+---
+
+### Output printing None
+
+* None is printed even though you don't want it to be there 
+* Example erroneous code: 
+```py
+def print_hello():
+  print("hello")
+if __name__ == '__main__':
+  print(print_hello())
+```
+
+* **Cause**: The function print_hello() does not return anything (it has no return statement) so when you call print(print_hello()) you are printing the return value which is None. 
+
+* Correct code: 
+```py
+def print_hello():
+  print("hello")
+if __name__ == '__main__':
+  print_hello()
+```
 
 ---
 
-# Undersirable Results
+### Positional Arguments Error
 
-Sometimes, we get a logic error, when the output does not match what we expect.
+* Let's first look at the case where too many arguments were provided in the function call
+* `print_name takes 0 positional arguments but 1 was given`
+* Example erroneous code: 
+```py
+def print_name():
+  print("Sam")
+if __name__ == '__main__':
+  print_name("Sam")
+```
+* **Cause**: The function print_name() does not take any parameters but when calling the function one parameter is being passed. This error signifies that there is a mismatch between the number of parameteres in the function defintion and the number of arguments in the function call. 
 
+* Correct code: 
+```py
+def print_name():
+  print("Sam")
+if __name__ == '__main__':
+  print_name()
+```
+* This also works the other way around if you are missing arguments in the function call
+* `get_largest() missing 1 required positional argument: 'y'`
+* Example erroneous code: 
+```py
+def get_largest(x,y):
+    return max(x,y)
+if __name__ == '__main__':
+  x = int(input())
+  y = int(input())
+  print(get_largest(x))
+```
+* **Cause**: The function get_largest takes in two parameters but when calling the function one is passed in. This error likewise signifies that there is a mismatch between the number of parameteres in the function defintion and the number of arguments in the function call. 
 
-... To be continued ...
+* Correct code: 
+```py
+def get_largest(x,y):
+    return max(x,y)
+if __name__ == '__main__':
+  x = int(input())
+  y = int(input())
+  print(get_largest(x,y))
+  
+```
 
 ---
 
+### Logic Errors
+* Sometimes, we get a logic error, when the output does not match what we expect.
+* Example erroneous code: 
+```py
+def get_largest(x,y):
+    if x > y: 
+      return y
+    else: 
+      return x
+```
+* **Cause**: Although the syntax of this function is correct and the function will produce no results while compiling, the result will be incorrect. This is simply due to a logical error. 
+
+* Correct code: 
+```py
+def get_largest(x,y):
+    if x > y: 
+      return x
+    else: 
+      return y
+```
+
+---
+
+### Address getting printed
+*   Function Address gets printed - `<function function_name at 0x....> `
+*   Example erroneous code:
+```py
+def area(radius):
+    return 3.14 * radius**2
+if __name__ == '__main__':   
+  radius = float(input())
+  print(f"Circle has area {area} inches squared.")
+```
+*   **Cause**:  Calling the function improperly without passing in a parameter 
+*   Correct code: 
+```py
+def area(radius):
+    return 3.14 * radius**2
+if __name__ == '__main__': 
+  radius = float(input())
+  print(f"Circle has area {area(radius)} inches squared.")
+```  
+---
+
+### Indentation Error
+* `IndentationError: unexpected indent`
+*   Example erroneous code:
+```py
+print("Hello world!")
+    print("What a nice day!")
+```
+*   **Cause**:   Indented even though it is not necessary. 
+*   Correct code: 
+```py
+print("Hello world!")
+print("What a nice day!")
+```
+
+---
+### Type Error
+* `TypeError`
+* Example erroneous code:
+```py
+num = 6
+print("I would like " + num + " tacos please.")
+```
+*   **Cause**:    You can only concatenate a string, not an interger type with a string. 
+* Correct code: 
+```py
+num = 6
+print("I would like", num, "tacos please.")
+```
+or 
+```py
+num = 6
+print("I would like " + str(num) + " tacos please.")
+```
+
+---
+### Value Error
+*   `ValueError: invalid literal for int() with base 10: '1792.99'`
+*   Example erroneous code:
+```py
+current_year = '1792.99'
+current_year = int(current_year)
+print(current_year)
+```
+*   **Cause**:   If you do want to pass a string representation of a float to an int,  you need to convert to a float first, then to an integer.
+*   Correct code: 
+```py
+current_year = '1792.99'
+current_year = float(current_year)
+current_year = int(current_year)
+print(current_year)
+```
 ## Acknowledgement
 
 Developed by Yekaterina Kharitonova with assistance from students and course mentors.
