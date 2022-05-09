@@ -313,6 +313,7 @@ print(current_year)
 
 * `None` is printed even though you don't want it to be there 
 * Example erroneous code: 
+
 ```py
 def print_hello():
     print("hello")
@@ -320,8 +321,10 @@ def print_hello():
 if __name__ == '__main__':
     print(print_hello())
 ```
+
 * **Cause**: The function `print_hello()` does not return anything (it has no `return` statement) so when you call `print(print_hello())` you are printing its return value which is `None`. 
 * Correct code: 
+
 ```py
 def print_hello():
     print("hello")
