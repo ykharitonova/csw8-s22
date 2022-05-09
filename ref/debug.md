@@ -34,6 +34,19 @@ Artwork by `@allison_horst`
 
 ---
 
+## `EOFError: EOF when reading a line`
+
+* **Cause**: Python is expecting an input but there is no input to provide. Alternatively, there might be a missing closing parenthesis (see [`SyntaxError: unexpected EOF while parsing`](#syntaxerror-unexpected-eof-while-parsing)). 
+* The program instructions might be providing 1 input value, but you have an extra `input()` in your code.
+```py
+num_items = int(input())
+item = input()
+```
+but the input is just a single number, there's no `item` to provide via `input()`.
+
+
+---
+
 ## `SyntaxError: unexpected EOF while parsing`
 
 *   **Cause**:  Missing a closing parenthesis `)`.
@@ -48,37 +61,6 @@ print("Hello, World")
 
 ---
 
-## `SyntaxError: invalid syntax`
-
-This is a general error that occurs when the syntax is not correct and a "Python sentence" is broken.
-    If enabled, pay close attention to the syntax highlighting, which can point at where the error might be happening.
-
-Below are sample Python syntax rules:
-1. A function call must start and end with a parenthesis; the number of open and closed parentheses must match.
-1. The literal text has to be enclosed within the quotation marks.
-1. Variables must first be defined (created) before being used.
-
-<br/>
-
-*   **Cause**:   Missing **opening** quotation mark or **opening** parenthesis or quotations around the text.
-*   Example erroneous code:
-```py
-print(Hello World')
-print'Hello World  
-print(Hello World) # see also NameError
-```
-
----
-
-## `SyntaxError: unmatched ')'`
-*   **Cause**:  an extra **closing** parenthesis `)` that does not have a matching **opening** paren `(`.
-*   Example erroneous code:
-```py
-print('Hello, World'))
-```
-
----
-
 ## `EOL while scanning string literal`
 
 *   **Cause**:   Missing a **closing** quotation mark or a mismatched quotation mark (incorrectly placed quotation can also cause it).
@@ -89,6 +71,21 @@ print('Hello, World) # missing a quotation mark
 or
 ```py
 print('Hello, World") # mismatched quotation marks
+```
+
+---
+
+## `IndentationError: unexpected indent`
+*   Example erroneous code:
+```py
+print("Hello world!")
+    print("What a nice day!")
+```
+*   **Cause**:   The code is either indented even though it is not necessary or is missing an indentation. The line number in the error points at where the mismatch happened.
+*   Correct code: 
+```py
+print("Hello world!")
+print("What a nice day!")
 ```
 
 
@@ -140,76 +137,188 @@ print(dict1["A"])
 
 ---
 
-### Output printing None
+## Positional Arguments Error
 
-* None is printed even though you don't want it to be there 
-* Example erroneous code: 
-```py
-def print_hello():
-  print("hello")
-if __name__ == '__main__':
-  print(print_hello())
-```
+Let's first look at the case where too many arguments were provided in the function call.
+In that case, the error would be something like: `print_name takes 0 positional arguments but 1 was given`.
 
-* **Cause**: The function print_hello() does not return anything (it has no return statement) so when you call print(print_hello()) you are printing the return value which is None. 
+* Example erroneous code:
 
-* Correct code: 
-```py
-def print_hello():
-  print("hello")
-if __name__ == '__main__':
-  print_hello()
-```
-
----
-
-### Positional Arguments Error
-
-* Let's first look at the case where too many arguments were provided in the function call
-* `print_name takes 0 positional arguments but 1 was given`
-* Example erroneous code: 
 ```py
 def print_name():
-  print("Sam")
+    print("Sam")
+
 if __name__ == '__main__':
-  print_name("Sam")
+    print_name("Sam")
 ```
-* **Cause**: The function print_name() does not take any parameters but when calling the function one parameter is being passed. This error signifies that there is a mismatch between the number of parameteres in the function defintion and the number of arguments in the function call. 
+
+* **Cause**: The function `print_name()` does not take any parameters but when calling the function one parameter is being passed. This error signifies that there is a mismatch between the number of parameteres in the function defintion and the number of arguments in the function call. 
 
 * Correct code: 
+
 ```py
 def print_name():
-  print("Sam")
-if __name__ == '__main__':
-  print_name()
-```
-* This also works the other way around if you are missing arguments in the function call
-* `get_largest() missing 1 required positional argument: 'y'`
-* Example erroneous code: 
-```py
-def get_largest(x,y):
-    return max(x,y)
-if __name__ == '__main__':
-  x = int(input())
-  y = int(input())
-  print(get_largest(x))
-```
-* **Cause**: The function get_largest takes in two parameters but when calling the function one is passed in. This error likewise signifies that there is a mismatch between the number of parameteres in the function defintion and the number of arguments in the function call. 
+    print("Sam")
 
-* Correct code: 
-```py
-def get_largest(x,y):
-    return max(x,y)
 if __name__ == '__main__':
-  x = int(input())
-  y = int(input())
-  print(get_largest(x,y))
+    print_name()
+```
+
+This also works the other way around if you are missing arguments in the function call. For example, the function below results in an error: `get_largest() missing 1 required positional argument: 'y'`.
+
+* Example erroneous code:
+
+```py
+def get_largest(x, y):
+    return max(x, y)
+
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    print(get_largest((x, y)))
+```
+
+* **Cause**: The function `get_largest()` takes in _two_ parameters but when calling the function only _one_ is passed in (i.e., a _tuple_ with two elements). This error likewise signifies that there is a mismatch between the number of parameteres in the function defintion and the number of arguments in the function call. 
+* Correct code: 
+
+```py
+def get_largest(x, y):
+    return max(x, y)
+
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    print(get_largest(x, y))
   
 ```
 
 ---
 
-### Logic Errors
+
+## `SyntaxError: invalid syntax`
+
+This is a general error that occurs when the syntax is not correct and a "Python sentence" is broken.
+    If enabled, pay close attention to the syntax highlighting, which can point at where the error might be happening.
+
+Below are sample Python syntax rules:
+1. A function call must start and end with a parenthesis; the number of open and closed parentheses must match.
+1. The literal text has to be enclosed within the quotation marks.
+1. Variables must first be defined (created) before being used.
+
+<br/>
+
+*   **Cause**:   Missing **opening** quotation mark or **opening** parenthesis or quotations around the text.
+*   Example erroneous code:
+```py
+print(Hello World')
+print'Hello World  
+print(Hello World) # see also NameError
+```
+
+---
+
+## `SyntaxError: unmatched ')'`
+*   **Cause**:  an extra **closing** parenthesis `)` that does not have a matching **opening** paren `(`.
+*   Example erroneous code:
+```py
+print('Hello, World'))
+```
+
+---
+
+## Type Error
+
+### `TypeError: can only concatenate str (not "int") to str`
+* Example erroneous code:
+```py
+num = 6
+print("I would like " + num + " tacos please.")
+```
+*   **Cause**:  You can only concatenate a string with a string, not a numeric type. Check the types of the variables that you are using in the concatenation.
+* Correct code and alternatives: 
+```py
+num = 6
+print("I would like " + str(num) + " tacos please.") # proper string concatenation
+print("I would like", num, "tacos please.") # using print defaults
+print(f"I would like {num} tacos please.") # using f-strings
+```
+
+### `TypeError: argument of type 'NoneType' is not iterable`
+
+* Example erroneous code:
+
+```py
+val = None
+if "a" in val:
+    print("Found it!")
+```
+
+*   **Cause**: The error usually occurs when the `in` operator in trying to index a `None` value instead of the sequence/collection. Check the type/value of the object that is used after the `in` operator - if that object is a result of the function's return value, verify that the function is returning the correct object or that your `if` branches are set up correctly to not try to index a `None`.
+
+* Correct code:
+```py
+val = None
+if val != None:
+    if "a" in val:
+        print("Found it!")
+```
+or
+```py
+val = "aeou" # correct object provided
+if "a" in val:
+    print("Found it!")
+```
+
+
+
+---
+
+## `ValueError: invalid literal for int() with base 10`
+*   Example erroneous code:
+```py
+current_year = '1792.99'
+current_year = int(current_year)
+print(current_year)
+```
+*   **Cause**:  Float, represented as a string, cannot be directly converted into an integer. If you do want to pass a string representation of a float to an int,  you need to convert to a float first, then to an integer.
+
+*   Correct code: 
+```py
+current_year = '1792.99'
+current_year = float(current_year)
+current_year = int(current_year)
+print(current_year)
+```
+
+
+---
+
+# Undesirable Results
+
+## Output printing None
+
+* `None` is printed even though you don't want it to be there 
+* Example erroneous code: 
+```py
+def print_hello():
+    print("hello")
+
+if __name__ == '__main__':
+    print(print_hello())
+```
+* **Cause**: The function `print_hello()` does not return anything (it has no `return` statement) so when you call `print(print_hello())` you are printing its return value which is `None`. 
+* Correct code: 
+```py
+def print_hello():
+    print("hello")
+
+if __name__ == '__main__':
+    print_hello()
+```
+
+---
+
+## Logic Errors
 * Sometimes, we get a logic error, when the output does not match what we expect.
 * Example erroneous code: 
 ```py
@@ -219,7 +328,7 @@ def get_largest(x,y):
     else: 
       return x
 ```
-* **Cause**: Although the syntax of this function is correct and the function will produce no results while compiling, the result will be incorrect. This is simply due to a logical error. 
+* **Cause**: Although the syntax of this function is correct and the function will produce no errors, the result will be incorrect. This is simply due to a logical error - an incorrect value is being returned (or, the `if` condition needs to be changed). 
 
 * Correct code: 
 ```py
@@ -232,79 +341,53 @@ def get_largest(x,y):
 
 ---
 
-### Address getting printed
+## Function address is printed `<function function_name at 0x....> `
 *   Function Address gets printed - `<function function_name at 0x....> `
 *   Example erroneous code:
+
 ```py
 def area(radius):
     return 3.14 * radius**2
+
 if __name__ == '__main__':   
-  radius = float(input())
-  print(f"Circle has area {area} inches squared.")
-```
-*   **Cause**:  Calling the function improperly without passing in a parameter 
-*   Correct code: 
-```py
-def area(radius):
-    return 3.14 * radius**2
-if __name__ == '__main__': 
-  radius = float(input())
-  print(f"Circle has area {area(radius)} inches squared.")
-```  
----
-
-### Indentation Error
-* `IndentationError: unexpected indent`
-*   Example erroneous code:
-```py
-print("Hello world!")
-    print("What a nice day!")
-```
-*   **Cause**:   Indented even though it is not necessary. 
-*   Correct code: 
-```py
-print("Hello world!")
-print("What a nice day!")
+    radius = float(input())
+    print(f"Circle has area {area} inches squared.")
 ```
 
+*   **Cause**:  Instead of the function call, which requires the parentheses (and the arguments, if necessary), only the name of the function is used. 
+*   Correct code: 
+```py
+    ...
+    print(f"Circle has area {area(radius)} inches squared.")
+``` 
+
 ---
-### Type Error
-* `TypeError`
+
+# Template
+
+### `Error: ...`
+
+This is a template for the error entries.
+
 * Example erroneous code:
+
 ```py
-num = 6
-print("I would like " + num + " tacos please.")
+...
 ```
-*   **Cause**:    You can only concatenate a string, not an interger type with a string. 
+
+*   **Cause**: ...
+
 * Correct code: 
 ```py
-num = 6
-print("I would like", num, "tacos please.")
-```
-or 
-```py
-num = 6
-print("I would like " + str(num) + " tacos please.")
+...
 ```
 
 ---
-### Value Error
-*   `ValueError: invalid literal for int() with base 10: '1792.99'`
-*   Example erroneous code:
-```py
-current_year = '1792.99'
-current_year = int(current_year)
-print(current_year)
-```
-*   **Cause**:   If you do want to pass a string representation of a float to an int,  you need to convert to a float first, then to an integer.
-*   Correct code: 
-```py
-current_year = '1792.99'
-current_year = float(current_year)
-current_year = int(current_year)
-print(current_year)
-```
-## Acknowledgement
+
+---
+---
+
+**Acknowledgement**
 
 Developed by Yekaterina Kharitonova with assistance from students and course mentors.
 {: .fs-2 }
