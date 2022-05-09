@@ -114,7 +114,7 @@ schedule:
         location: Prof K
       - name: Office Hours
         start: 2:00 PM
-        end: 4:00 PM
+        end: 3:00 PM
         location: Liu
       - name: Office Hours
         start: 5:00 PM
@@ -130,5 +130,9 @@ schedule:
         start: 10:00 AM
         end: 12:00 PM
         location: Apurv
+      - name: Office Hours
+        start: 4:00 PM
+        end: 5:00 PM
+        location: Liu
   
 ---
