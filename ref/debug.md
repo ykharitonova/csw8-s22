@@ -39,7 +39,9 @@ Artwork by `@allison_horst`
 * **Cause**: 
     * Python is expecting an input but there is no input to provide. 
     * Alternatively, there might be a missing closing parenthesis (see [`SyntaxError: unexpected EOF while parsing`](#syntaxerror-unexpected-eof-while-parsing)). 
-    * If the error is produced when using a loop, check that you do not have an infinite loop.
+    * If the error is produced when using a loop, check that you do not have an infinite loop. Look closely at the loop's conditions and verify that the loop stops, especially, in the edge cases.
+    * In almost all cases, `input()` should be included inside the **main program**, _not_ inside the functions.
+
 * The program instructions might be providing 1 input value, but you have an extra `input()` in your code.
 ```py
 num_items = int(input())
