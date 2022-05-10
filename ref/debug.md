@@ -34,7 +34,9 @@ Artwork by `@allison_horst`
 
 ---
 
-## `EOFError: EOF when reading a line`
+## EOF (end-of-file) errors
+
+### `EOFError: EOF when reading a line`
 
 * **Cause**: 
     * Python is expecting an input but there is no input to provide. 
@@ -61,7 +63,7 @@ while num_items:
 
 ---
 
-## `SyntaxError: unexpected EOF while parsing`
+### `SyntaxError: unexpected EOF while parsing`
 
 *   **Cause**:  Missing a closing parenthesis `)`.
 *   Example erroneous code:
@@ -89,7 +91,8 @@ print('Hello, World") # mismatched quotation marks
 
 ---
 
-## `IndentationError: unexpected indent`
+## Indentation Error
+### `IndentationError: unexpected indent`
 *   Example erroneous code:
 ```py
 print("Hello world!")
@@ -102,6 +105,24 @@ print("Hello world!")
 print("What a nice day!")
 ```
 
+---
+
+### `IndentationError: expected an indented block`
+
+*   Example erroneous code:
+```py
+def print_hello():
+"""Print a simple greeting."""
+print("Hello!")
+```
+
+* **Cause**: This error occurs if the previous line ended with a colon `:` and did not have a properly indented line of code underneath it. It is likely that the issue occured at the line directly above the line reported in the error.
+*   Correct code (notice the indentation after the line that ends with a colon):
+```py
+def print_hello():
+    """Print a simple greeting."""
+    print("Hello!")
+```
 
 ---
 
@@ -256,6 +277,8 @@ print("I would like " + str(num) + " tacos please.") # proper string concatenati
 print("I would like", num, "tacos please.") # using print defaults
 print(f"I would like {num} tacos please.") # using f-strings
 ```
+
+---
 
 ### `TypeError: argument of type 'NoneType' is not iterable`
 
