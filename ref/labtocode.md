@@ -120,7 +120,7 @@ We can copy/paste our skeleton function template and begin updating its componen
 def ___( _ ):
     """ 
     This function takes as an argument
-    parameter: meaning/description (type)
+    param: meaning/description (type)
     ...
     The function returns/prints object (type).
     """
@@ -131,7 +131,8 @@ def ___( _ ):
 The code could roughly be as follows (we'll leave the naming of the argument up to you and will replace it with the [ellipsis]({{ site.url }}{{ site.baseurl }}/ref/keyboard#-other-symbols):
 ```py
 def meters_to_laps(...):
-    """ The function takes a number of meters (float) as an argument.
+    """ The function takes as input
+        param: ... - number of meters (float).
         Uses the race course distance of 50 meters (164.0 ft) in length.
         The function returns the number of laps (float).
     """
@@ -160,8 +161,9 @@ After following the lab instructions, for this lab, the structure of the solutio
 
 ```py
 def meters_to_laps(...):
-    """ The function takes a number of meters (float) as an argument
-        and returns the number of laps (float).
+    """ The function takes as input
+        param: ... - number of meters (float)
+        The function returns the number of laps (float).
     """
     ### compute the number of laps
     num_laps = ...
@@ -184,7 +186,8 @@ You can copy/paste the template below, just remember to update the comments.
 def function_name(param1, param2, ...):
     """ 
     This function takes as an argument
-    parameter: meaning/description (type)
+    param: param1 -  meaning/description (type)
+    param: param2 -  meaning/description (type)
     Quick description of the function goal.
     The function returns/prints object (type).
     """
