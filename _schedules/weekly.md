@@ -131,6 +131,10 @@ schedule:
         end: 12:00 PM
         location: Apurv
       - name: Office Hours
+        start: 1:00 PM
+        end: 2:00 PM
+        location: Vaishnavi
+      - name: Office Hours
         start: 4:00 PM
         end: 5:00 PM
         location: Liu
