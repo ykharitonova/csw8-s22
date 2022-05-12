@@ -263,6 +263,55 @@ print('Hello, World'))
 
 ## Type Error
 
+### `TypeError: argument of type 'int' is not iterable`
+
+* Example erroneous code:
+
+```py
+total = 42
+sum(total)
+```
+
+*   **Cause**: The error usually occurs when a built-in Python function that is intended for a sequence/collection is applied to an integer instead.
+* Correct code:
+
+```py
+total = [42]
+sum(total)
+```
+
+---
+
+### `TypeError: argument of type 'NoneType' is not iterable`
+
+* Example erroneous code:
+
+```py
+val = None
+if "a" in val:
+    print("Found it!")
+```
+
+*   **Cause**: The error usually occurs when the `in` operator in trying to index a `None` value instead of the sequence/collection. 
+    * Check the type/value of the object that is used after the `in` operator - if that object is a result of the function's return value, verify that the function is returning the correct object or that your `if` branches are set up correctly to not try to index a `None`.
+    * Do not store the result of `print()` and attempt to index it. Just like the methods that modify lists directly (since lists are mutable), `print()` does not return anything other than `None`.
+
+* Correct code:
+```py
+val = None
+if val != None:
+    if "a" in val:
+        print("Found it!")
+```
+or
+```py
+val = "aeou" # correct object provided
+if "a" in val:
+    print("Found it!")
+```
+
+---
+
 ### `TypeError: can only concatenate str (not "int") to str`
 * Example erroneous code:
 ```py
@@ -280,35 +329,53 @@ print(f"I would like {num} tacos please.") # using f-strings
 
 ---
 
-### `TypeError: argument of type 'NoneType' is not iterable`
+### `TypeError: object of type '...' has no len()`
+
+Examples include the errors
+```
+TypeError: object of type 'int' has no len()
+TypeError: object of type 'float' has no len()
+```
 
 * Example erroneous code:
 
 ```py
-val = None
-if "a" in val:
-    print("Found it!")
+len(42)
 ```
 
-*   **Cause**: The error usually occurs when the `in` operator in trying to index a `None` value instead of the sequence/collection. Check the type/value of the object that is used after the `in` operator - if that object is a result of the function's return value, verify that the function is returning the correct object or that your `if` branches are set up correctly to not try to index a `None`.
+*   **Cause**: The error usually occurs when you think that you are asking for a length of a collection (e.g., a list, string, dictionary) but in reality the argument is an integer. Examine the value that is being provided as an argument into the `len()` function.
 
-* Correct code:
+* Correct code: 
 ```py
-val = None
-if val != None:
-    if "a" in val:
-        print("Found it!")
+len([42]) 
 ```
-or
-```py
-val = "aeou" # correct object provided
-if "a" in val:
-    print("Found it!")
-```
-
-
 
 ---
+
+### `TypeError: ... takes exactly one argument (... given)`
+
+Some examples of this error:
+```
+TypeError: len() takes exactly one argument (2 given)
+```
+
+* Example erroneous code:
+
+```py
+len(42, 33)
+```
+
+*   **Cause**: The error usually occurs when 
+    * a built-in Python function is being applied to an incorrect object.
+    * the function is not given the required number of arguments.
+
+* Correct code: 
+```py
+len([42, 33]) 
+```
+
+---
+
 
 ## `ValueError: invalid literal for int() with base 10`
 *   Example erroneous code:
