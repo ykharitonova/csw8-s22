@@ -35,6 +35,7 @@ Quiz 5 has been graded and released - you should have received an email from Gra
 * ⏰ **Wednesday 10PM** Regrade requests are Due on **Gradescope**
     * Note regarding regrade-requests: After the quiz grades are released, students can submit a regrade request on Gradescope as described here: [{{site.url}}/{{site.baseurl}}/quiz]({{site.url}}/{{site.baseurl}}/quiz).
     * For Gradescope quizzes always use the regrade request button (**not email or the forum**).
+* We also added [Common autograder error messages on Gradescope]({{site.url}}/{{site.baseurl}}/ref/debug/#common-autograder-error-messages-on-gradescope) to help you makes sense of some of the errors that you might be seeing there.
 
 
 ## ➡️    Staying on Track in Week 8
@@ -56,6 +57,8 @@ Quiz 5 has been graded and released - you should have received an email from Gra
 * Just a reminder: you can find these announcements on the [main course website]({{site.url}}/{{site.baseurl}}/) as well as under the [**Instructor Announcements** on Gauchospace](https://gauchospace.ucsb.edu/courses/mod/forum/view.php?id=1014718) (which is supposed to email it to you automatically).
 
 * Check out this helpful resource on [lists](https://www.w3schools.com/python/python_lists.asp) and [dictionaries](https://www.w3schools.com/python/python_dictionaries.asp). We encourage you to try out the examples there and don’t hesitate to use print statements to understand what each method does -- it's an excellent debugging technique!
+
+* If you missed the links above, here they are again: make sure you know where to find a guide for [submitting a regrade request on Gradescope]({{site.url}}/{{site.baseurl}}/quiz) and explanations for the [Common autograder error messages on Gradescope]({{site.url}}/{{site.baseurl}}/ref/debug/#common-autograder-error-messages-on-gradescope).
 
 * Join us on Piazza either for the [mindfulness challenge](https://piazza.com/class/l1ca0xuimie3f9?cid=243) or to [try out the fun game](https://piazza.com/class/l1ca0xuimie3f9?cid=276) that one of your classmates put together. The idea for the user interaction is very similar to what you'll be doing in your final project. ;-)
 
