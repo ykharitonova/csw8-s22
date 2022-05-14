@@ -470,6 +470,33 @@ if __name__ == '__main__':
 
 ---
 
+
+---
+---
+---
+# Common autograder error messages on Gradescope
+
+## `Your submission timed out. It took longer than 600 seconds to run.` 
+
+* **Cause**: you have an infinite `while` loop in your code. 
+* **Check**: Carefully look at the condition in the `while` and ask when/if it will ever become False. Check when/where you are updating variables in the condition - the loop will keep going until the condition becomes False, so if the variable is not updated _within_ the loop, you get an infinite loop.
+
+## `Test Failed: Check the name of your .py file: it is incorrect.`
+
+* **Cause**: you did not name your file according to the instructions.
+* We do not re-upload students' files: if _you_ would want to manually do something for all 280+ students in the class, please do not ask us to do it.
+
+## `Test Failed: Syntax error when importing ...`
+
+* **Cause**: Something in your file is causing a syntax error (could be as simple as incorrect indentation; see the SyntaxError examples listed above). 
+* **Check**: Run your code and examine the line that is causing an error.
+
+---
+---
+---
+
+
+
 # Template
 
 ### `Error: ...`
