@@ -582,7 +582,7 @@ This is a template for the error entries.
 ---
 ---
 
-**Acknowledgement**
+**Acknowledgements**
 
 Developed by Yekaterina Kharitonova with assistance from students and course mentors.
 {: .fs-2 }
