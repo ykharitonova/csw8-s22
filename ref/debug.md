@@ -126,6 +126,42 @@ def print_hello():
 
 ---
 
+### `KeyError: ...`
+
+This error occurs when working with dictionaries. The line above the error shows which line caused the incorrect retrieval.
+
+* Example erroneous code:
+
+```py
+month_names = {
+    "1": "January",
+    "2": "February",
+}
+print("First month is", month_names[1]) # KeyError: 1
+```
+
+Alternatively, you wouldn't get an error but would get an undesired output that displays `None` if using `.get()`:
+
+```py
+print("First month is", month_names.get(1)) # results in "First month is None"
+```
+
+*   **Cause**: This error occurrs when trying to retrieve a value using a key that doesn't exist in the dictionary. Possible causes:
+    * the dictionary does not store the correct key-value pairs (did you add all necessary items? what about the edge cases?)
+    * the key is stored / retrieved as an incorrect type (see the example)
+
+* Correct code (alternative options): 
+
+```py
+...
+print("First month is", month_names["1"])
+print("First month is", month_names.get("1"))
+print("First month is", month_names[str(1)])
+```
+
+---
+
+
 ## `NameError: name '...' is not defined`
 
 Python would replace the ellipsis `...` with the name of the variable that it's unable to find.
