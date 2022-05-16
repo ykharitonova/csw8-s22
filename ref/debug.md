@@ -23,6 +23,7 @@ Artwork by `@allison_horst`
 1. Go back to the instructions and carefully re-read them.
 1. Use [Python Tutor to visualize your code](https://pythontutor.com/visualize.html#mode=edit).
 1. Use the [Rubber Duck Debugging](https://rubberduckdebugging.com) to walk yourself through the logic of your code.
+1. If you are having trouble with your output not matching what is expected, use an online text comparison tool, e.g. <https://text-compare.com> or <https://contenttool.io/text-difference-checker>.
 
 ---
 
@@ -34,7 +35,7 @@ Artwork by `@allison_horst`
 
 ---
 
-## EOF (end-of-file) errors
+## EOF (end-of-file) Errors
 
 ### `EOFError: EOF when reading a line`
 
@@ -91,7 +92,7 @@ print('Hello, World") # mismatched quotation marks
 
 ---
 
-## Indentation Error
+## Indentation Errors
 ### `IndentationError: unexpected indent`
 *   Example erroneous code:
 ```py
@@ -126,7 +127,7 @@ def print_hello():
 
 ---
 
-### `KeyError: ...`
+# `KeyError: ...` with a dictionary
 
 This error occurs when working with dictionaries. The line above the error shows which line caused the incorrect retrieval.
 
@@ -161,6 +162,7 @@ print("First month is", month_names[str(1)])
 
 ---
 
+# Name Errors
 
 ## `NameError: name '...' is not defined`
 
@@ -190,7 +192,7 @@ generates the same error (`NameError: name 'Hello' is not defined`), since Pytho
 
 ---
 
-### `NameError` with a dictionary
+## `NameError` with a dictionary
 
 *   `NameError: name 'A' is not defined`
 *   Example erroneous code:
@@ -208,7 +210,7 @@ print(dict1["A"])
 
 ---
 
-## Positional Arguments Error
+# Positional Arguments Errors
 
 Let's first look at the case where too many arguments were provided in the function call.
 In that case, the error would be something like: `print_name takes 0 positional arguments but 1 was given`.
@@ -265,6 +267,7 @@ if __name__ == '__main__':
 
 ---
 
+# Syntax Errors
 
 ## `SyntaxError: invalid syntax`
 
@@ -297,7 +300,7 @@ print('Hello, World'))
 
 ---
 
-## Type Error
+# Type Errors
 
 ### `TypeError: argument of type 'int' is not iterable`
 
@@ -365,6 +368,26 @@ print(f"I would like {num} tacos please.") # using f-strings
 
 ---
 
+## `ValueError: invalid literal for int() with base 10`
+*   Example erroneous code:
+```py
+current_year = '1792.99'
+current_year = int(current_year)
+print(current_year)
+```
+*   **Cause**:  Float, represented as a string, cannot be directly converted into an integer. If you do want to pass a string representation of a float to an int,  you need to convert to a float first, then to an integer.
+
+*   Correct code: 
+```py
+current_year = '1792.99'
+current_year = float(current_year)
+current_year = int(current_year)
+print(current_year)
+```
+
+
+---
+
 ### `TypeError: object of type '...' has no len()`
 
 Examples include the errors
@@ -409,25 +432,27 @@ len(42, 33)
 ```py
 len([42, 33]) 
 ```
-
 ---
 
+### `TypeError: unsupported operand type(s) for +: 'int' and 'list'`
 
-## `ValueError: invalid literal for int() with base 10`
-*   Example erroneous code:
+* Example erroneous code:
+
 ```py
-current_year = '1792.99'
-current_year = int(current_year)
-print(current_year)
+nested_list = [[5, 10, 6], [7, 8, 9]]
+total_sum = sum(nested_list)
 ```
-*   **Cause**:  Float, represented as a string, cannot be directly converted into an integer. If you do want to pass a string representation of a float to an int,  you need to convert to a float first, then to an integer.
 
-*   Correct code: 
+*   **Cause**: The error can occur when trying to sum up a nested list, instead of its individual elements.
+
+* Correct code: 
+
 ```py
-current_year = '1792.99'
-current_year = float(current_year)
-current_year = int(current_year)
-print(current_year)
+nested_list = [[5, 10, 6], [7, 8, 9]]
+total_sum = 0
+for item in nested_list:
+    item_sum = sum(item)
+    total_sum += item_sum
 ```
 
 
